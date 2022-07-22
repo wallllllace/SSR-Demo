@@ -11,7 +11,9 @@
     "build": "npm run clear && npm run build:client && npm run build:server"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.1",
+    "html-minifier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
