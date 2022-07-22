@@ -10,10 +10,11 @@ app.get('/', function(req,res){
         <html>
             <head>
                 <title> SSR demo </title>
+                <link rel="stylesheet" type="text/css" href="./app.css">
+                <script src="./app.bundle.js"></script>
             </head>
             <body>
                 Hello World ${content} !
-                <script src="/index.js"></script>
             </body>
         </html>
     `);

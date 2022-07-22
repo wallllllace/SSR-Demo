@@ -13,6 +13,14 @@ const config = merge(common, {
   output: {
     filename: '[name].bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ]
+  },
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
