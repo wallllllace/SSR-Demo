@@ -7,7 +7,7 @@
     "dev:server": "nodemon src/server/App.js",
     "build:client": "webpack --mode development --config config/webpack.config.client.js",
     "build:server": "webpack --mode development --config config/webpack.config.server.js",
-    "start": "cross-env NODE_ENV=production node dist/server.js dist/app.css",
+    "start": "cross-env NODE_ENV=production node dist/server.js",
     "build": "npm run clear && npm run build:client && npm run build:server"
   },
   "dependencies": {
